@@ -786,7 +786,7 @@ li.menu-item.contactNav {
   font-weight: 500;
   font-size: 20px; }
 
-.portfolio__about p {
+.portfolio__about article {
   font-weight: 500; }
 
 .portfolio__about ul {
@@ -824,13 +824,14 @@ a.demo {
   .portfolio__about h4 {
     margin: 2px 0; }
   .portfolio__about ul {
-    margin: -15px; }
+    margin: 0; }
   a.code,
   a.demo {
     font-size: 1em;
     width: 90px;
     height: 45px;
-    font-weight: 500; } }
+    font-weight: 500;
+    margin-top: 10px; } }
 
 @media (max-width: 800px) {
   .portfolio {

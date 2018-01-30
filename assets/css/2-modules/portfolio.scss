@@ -47,7 +47,7 @@
   font-size: 20px;
 }
 
-.portfolio__about p {
+.portfolio__about article {
   font-weight: 500;
 }
 
@@ -90,7 +90,7 @@ a.demo {
   }
   
   .portfolio__about ul {
-  margin: -15px;
+  margin: 0;
   }
   
   a.code,
@@ -99,6 +99,7 @@ a.demo {
     width: 90px;
     height: 45px;
     font-weight: 500;
+    margin-top: 10px;
   }
 }
 
