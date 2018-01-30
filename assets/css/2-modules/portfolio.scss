@@ -33,11 +33,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.portfolio__about h4 {
+.portfolio__about h4,
+.description {
   display: inline;
   font-weight: 700;
   color: #000;
   margin: 5px 0;
+  font-size: 20px;
 }
 
 .portfolio__about span {
@@ -47,8 +49,9 @@
   font-size: 20px;
 }
 
-.portfolio__about article {
+.description p {
   font-weight: 500;
+  font-size: 20px;
 }
 
 .portfolio__about ul {
@@ -81,7 +84,9 @@ a.demo {
 
 @media(max-width: 900px) {
   .portfolio__about h4,
-  .portfolio__about span {
+  .portfolio__about span,
+  .description,
+  .description p {
     font-size: 1em;
   }
   
@@ -99,7 +104,6 @@ a.demo {
     width: 90px;
     height: 45px;
     font-weight: 500;
-    margin-top: 10px;
   }
 }
 

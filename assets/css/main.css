@@ -774,11 +774,13 @@ li.menu-item.contactNav {
   display: grid;
   font-family: 'Roboto', sans-serif; }
 
-.portfolio__about h4 {
+.portfolio__about h4,
+.description {
   display: inline;
   font-weight: 700;
   color: #000;
-  margin: 5px 0; }
+  margin: 5px 0;
+  font-size: 20px; }
 
 .portfolio__about span {
   text-align: right;
@@ -786,8 +788,9 @@ li.menu-item.contactNav {
   font-weight: 500;
   font-size: 20px; }
 
-.portfolio__about article {
-  font-weight: 500; }
+.description p {
+  font-weight: 500;
+  font-size: 20px; }
 
 .portfolio__about ul {
   font-weight: 500;
@@ -819,7 +822,9 @@ a.demo {
 
 @media (max-width: 900px) {
   .portfolio__about h4,
-  .portfolio__about span {
+  .portfolio__about span,
+  .description,
+  .description p {
     font-size: 1em; }
   .portfolio__about h4 {
     margin: 2px 0; }
@@ -830,8 +835,7 @@ a.demo {
     font-size: 1em;
     width: 90px;
     height: 45px;
-    font-weight: 500;
-    margin-top: 10px; } }
+    font-weight: 500; } }
 
 @media (max-width: 800px) {
   .portfolio {
