@@ -59,6 +59,10 @@
   margin: -10px;
 }
 
+.portfolio__about li:last-child {
+  margin-bottom: 25px;
+}
+
 .portfolio__buttons {
   display: grid;
   grid-gap: 20px;
