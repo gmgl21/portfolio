@@ -32,6 +32,7 @@ $nav-font-color: #fff;
 
 .menu a {
   text-decoration: none;
+  padding: 20px;
 }
 .logo {
   display: grid;
@@ -39,7 +40,6 @@ $nav-font-color: #fff;
   order: -1;
   font-size: 25px;
   font-weight: 700;
-  padding: 20px;
   position: absolute;
 }
 
