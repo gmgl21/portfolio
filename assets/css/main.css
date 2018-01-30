@@ -511,7 +511,8 @@ body {
   width: 100vw; }
 
 .menu a {
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 20px; }
 
 .logo {
   display: grid;
@@ -522,7 +523,6 @@ body {
           order: -1;
   font-size: 25px;
   font-weight: 700;
-  padding: 20px;
   position: absolute; }
 
 .menu-list {
