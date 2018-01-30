@@ -1,0 +1,204 @@
+$nav-background: #000;
+$nav-font-color: #fff;
+
+.navbar {
+  background: #000;
+  border: 2px solid $silver;
+  color: $silver;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 1 / -1;
+  background: black;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.logo {
+  display: grid;
+  justify-self: start;
+  order: -1;
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 20px;
+  position: absolute;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1 / -1;
+  justify-self: end;
+  color: $nav-font-color;
+}
+.menu ul {
+  list-style: none;
+}
+
+.menu-list > * {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 5px;
+}
+
+.project-list {
+  visibility: hidden;
+  transition: 0.2s 1s;
+  padding: 10px 0;
+  min-width: 100px;
+  background: $nav-background;
+  text-align: center;
+  text-transform: none;
+}
+
+
+a.logo,
+a.menu-item,
+li.menu-item.contactNav {
+  color: $nav-font-color;
+}
+
+
+.project-list li a {
+  font-size: 14px;
+  color: $nav-font-color;
+}
+
+.menu-item.portfolio,
+.menu-item.contactNav {
+  padding: 0;
+}
+
+.menu-item.portfolio:hover ~ ul  {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.contact-info {
+  visibility: hidden;
+  transition: 0.2s 1s;
+  padding: 10px;
+  min-width: 100px;
+  background: $nav-background;
+  text-transform: none;
+  text-align: left;
+}
+
+.contact-info li i {
+  font-size: 14px;
+}
+
+.contact-info li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: $nav-font-color;
+  padding: 10px;
+  font-weight: 500;
+}
+
+
+.menu-item.contactNav:hover ~ ul  {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+[aria-controls='menu-list'] {
+  display: none;
+}
+
+@media(max-width: 800px) {
+  .menu {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1 / -1;
+    padding: 2px;
+  }
+  
+  .navbar {
+    display: block;
+    grid-column: 2 / -1;
+    order: -1;
+    perspective: 800px;
+  }
+  
+  .menu-list {
+    display: block;
+    grid-column: 2 / -1;
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+    margin-top: 125px;
+    background: $silver;
+    min-width: 110px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+  }
+  a.menu-item {
+    color: #000;
+  }
+  .menu-list > * {
+    padding: 5px;
+    color: #000;
+  }
+  
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: relative;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+  
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+  
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+  
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+  
+  .project-list,
+  .contact-info {
+    display: inline;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .project-list li a,
+  .contact-info li a{
+    color: #000;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+}

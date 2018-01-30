@@ -1,0 +1,21 @@
+{
+  "name": "gloria-lee.com",
+  "version": "1.0.0",
+  "description": "gloria-lee.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gloria Lee",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "sass-flexbox": "^2.0.0"
+  }
+}
