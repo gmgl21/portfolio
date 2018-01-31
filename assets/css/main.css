@@ -599,7 +599,7 @@ li.menu-item.contactNav {
        -o-transition-delay: 0s;
           transition-delay: 0s; }
 
-[aria-controls='menu-list'] {
+.navbar {
   display: none; }
 
 @media (max-width: 800px) {
