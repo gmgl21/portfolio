@@ -24,9 +24,12 @@
   color: #fff;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
+  .contact {
+    position: relative;
+  }
   .fa {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 

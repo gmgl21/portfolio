@@ -617,6 +617,8 @@ li.menu-item.contactNav {
             order: -1;
     -webkit-perspective: 800px;
             perspective: 800px; }
+  .navbar span {
+    display: block; }
   .menu-list {
     display: block;
     grid-column: 2 / -1;
@@ -628,7 +630,7 @@ li.menu-item.contactNav {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     padding: 0;
-    margin-top: 125px;
+    margin-top: 155px;
     background: #ddd;
     min-width: 110px;
     -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
@@ -636,7 +638,7 @@ li.menu-item.contactNav {
   a.menu-item {
     color: #000; }
   .menu-list > * {
-    padding: 5px;
+    padding: 0;
     color: #000; }
   [aria-expanded="true"] ~ ul {
     display: block;
@@ -654,14 +656,18 @@ li.menu-item.contactNav {
   .contact-info {
     display: inline;
     visibility: visible;
-    margin: 0;
     padding: 0;
     z-index: 1; }
   .project-list li a,
   .contact-info li a {
     color: #000; }
+  .project-list li,
+  .contact-info li {
+    margin: 10px; }
   .contact-info {
-    text-align: center; } }
+    text-align: center; }
+  .contact-info li i {
+    font-size: 20px; } }
 
 .intro {
   display: grid;
@@ -893,9 +899,11 @@ a.demo {
   margin: 0 10px 0 5px;
   color: #fff; }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .contact {
+    position: relative; }
   .fa {
-    font-size: 1em; } }
+    font-size: 1.2em; } }
 
 @media (max-width: 400px) {
   .contact {

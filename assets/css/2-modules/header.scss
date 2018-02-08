@@ -142,6 +142,10 @@ li.menu-item.contactNav {
     perspective: 800px;
   }
   
+  .navbar span {
+    display: block;
+  }
+  
   .menu-list {
     display: block;
     grid-column: 2 / -1;
@@ -150,7 +154,7 @@ li.menu-item.contactNav {
     transform: rotateX(90deg);
     transition: all 0.5s ease-in-out;
     padding: 0;
-    margin-top: 125px;
+    margin-top: 155px;
     background: $silver;
     min-width: 110px;
     -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
@@ -161,7 +165,7 @@ li.menu-item.contactNav {
     color: #000;
   }
   .menu-list > * {
-    padding: 5px;
+    padding: 0;
     color: #000;
   }
   
@@ -188,7 +192,6 @@ li.menu-item.contactNav {
   .contact-info {
     display: inline;
     visibility: visible;
-    margin: 0;
     padding: 0;
     z-index: 1;
   }
@@ -198,7 +201,15 @@ li.menu-item.contactNav {
     color: #000;
   }
   
+  .project-list li,
+  .contact-info li{
+    margin: 10px;
+  }
+  
   .contact-info {
     text-align: center;
+  }
+  .contact-info li i {
+    font-size: 20px;
   }
 }
