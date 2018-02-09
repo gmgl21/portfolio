@@ -65,6 +65,15 @@ $nav-font-color: #fff;
   padding: 5px;
 }
 
+.portfolio > .arrow-down {
+  display: inline;
+  position: absolute;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  justify-self: center;
+  margin-left: 100px;
+}
+
 .project-list {
   visibility: hidden;
   transition: 0.2s 1s;
@@ -93,9 +102,17 @@ li.menu-item.contactNav {
   padding: 0;
 }
 
-.menu-item.portfolio:hover ~ ul  {
+.menu-item.portfolio:active ~ ul  {
   visibility: visible;
   transition-delay: 0s;
+}
+
+.contactNav > .arrow-down {
+  display: inline-block;
+  position: absolute;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  justify-self: end;
 }
 
 .contact-info {
@@ -122,7 +139,7 @@ li.menu-item.contactNav {
 }
 
 
-.menu-item.contactNav:hover ~ ul  {
+.menu-item.contactNav:active ~ ul  {
   visibility: visible;
   transition-delay: 0s;
 }
@@ -134,9 +151,14 @@ li.menu-item.contactNav {
 @media(max-width: 800px) {
   .menu {
     display: grid;
+    position: fixed;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1 / -1;
-    padding: 2px;
+    height: 50px;
+  }
+  
+  .logo {
+    align-self: center;
   }
   
   .navbar {
@@ -144,6 +166,7 @@ li.menu-item.contactNav {
     grid-column: 2 / -1;
     order: -1;
     perspective: 800px;
+    align-self: center;
   }
   
   .navbar span {
@@ -154,32 +177,35 @@ li.menu-item.contactNav {
     display: block;
     grid-column: 2 / -1;
     max-height: 0;
-    overflow: hidden;
     transform: rotateX(90deg);
     transition: all 0.5s ease-in-out;
     padding: 0;
-    margin-top: 155px;
+    margin: 0;
     background: $silver;
     min-width: 110px;
     -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
+    z-index: 1;
   }
   a.menu-item {
     color: #000;
+    margin: 0;
   }
+
   .menu-list > * {
-    padding: 0;
     color: #000;
+    background: $silver;
   }
+
   
   [aria-expanded="true"] ~ ul {
     display: block;
     position: relative;
-    max-height: 500px;
+    min-height: 325px;
     transform: rotateX(0);
   }
-  
+
   [aria-expanded="true"] .open {
     display: none;
   }
@@ -197,23 +223,27 @@ li.menu-item.contactNav {
     display: inline;
     visibility: visible;
     padding: 0;
-    z-index: 1;
   }
   
   .project-list li a,
   .contact-info li a{
+    display: inline;
     color: #000;
   }
   
   .project-list li,
   .contact-info li{
-    margin: 10px;
+    padding: 10px;
   }
   
   .contact-info {
     text-align: center;
   }
-  .contact-info li i {
-    font-size: 20px;
+}
+
+@media(max-height: 400px) {
+  .menu {
+    overflow: auto;
+    height: 80px;
   }
 }
