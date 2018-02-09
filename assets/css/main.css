@@ -479,23 +479,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.contactNav > .arrow-down {
-  display: inline-block;
-  position: absolute;
-  -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  justify-self: end; }
-
-.portfolio > .arrow-down {
-  display: inline;
-  position: absolute;
-  -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  justify-self: center;
-  margin-left: 100px; }
-
 .navbar {
   background: #000;
   border: 2px solid #ddd;
@@ -561,6 +544,15 @@ body {
   margin: 0;
   padding: 5px; }
 
+.portfolio > .arrow-down {
+  display: inline;
+  position: absolute;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  justify-self: center;
+  margin-left: 100px !important; }
+
 .project-list {
   visibility: hidden;
   -webkit-transition: 0.2s 1s;
@@ -590,6 +582,14 @@ li.menu-item.contactNav {
   -webkit-transition-delay: 0s;
        -o-transition-delay: 0s;
           transition-delay: 0s; }
+
+.contactNav > .arrow-down {
+  display: inline-block;
+  position: absolute;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  justify-self: end; }
 
 .contact-info {
   visibility: hidden;
