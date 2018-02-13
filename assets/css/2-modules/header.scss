@@ -65,14 +65,6 @@ $nav-font-color: #fff;
   padding: 5px;
 }
 
-.portfolio > .arrow-down {
-  display: inline;
-  position: absolute;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  justify-self: center;
-  margin-left: 100px!important;
-}
 
 .project-list {
   visibility: hidden;
@@ -105,14 +97,6 @@ li.menu-item.contactNav {
 .menu-item.portfolio:active ~ ul  {
   visibility: visible;
   transition-delay: 0s;
-}
-
-.contactNav > .arrow-down {
-  display: inline-block;
-  position: absolute;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  justify-self: end;
 }
 
 .contact-info {
