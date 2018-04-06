@@ -872,9 +872,20 @@ a.code {
     place-items: center; }
   .portfolio__img {
     grid-area: portfolio-img;
-    width: 100%;
-    height: auto;
-    margin: 20px 5px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: auto; }
   .portfolio__about {
     grid-area: portfolio-about;
     width: 75%; } }
