@@ -58,24 +58,30 @@
   margin-bottom: 25px;
 }
 
-.portfolio__buttons {
+ul.portfolio__buttons {
   display: flex;
-  justify-self: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
 a.demo {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+a.code {
+  margin-left: 10px;
 }
 
 a.demo,
 a.code {
-  display: grid;
+  display: flex;
   background: $charcoal;
   border-radius: 10%;
   width: 150px;
   height: 75px;
-  text-align: center;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2em;
   font-weight: 700;
   color: $white;
