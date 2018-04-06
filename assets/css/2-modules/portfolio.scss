@@ -3,8 +3,7 @@
   padding-bottom: 30px;
 }
 
-.projectOne,
-.projectThree {
+.projectOne {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -13,8 +12,7 @@
   padding: 20px;
 }
 
-.projectTwo,
-.projectFour {
+.projectTwo {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -35,11 +33,12 @@
 
 .portfolio__about h4,
 .description {
-  display: inline;
+  display: block;
   font-weight: 700;
   color: #000;
   margin: 5px 0;
   font-size: 20px;
+  line-height: 1.7em;
 }
 
 .portfolio__about span {
@@ -54,30 +53,27 @@
   font-size: 20px;
 }
 
-.portfolio__about ul {
-  font-weight: 500;
-  margin: -10px;
-}
 
 .portfolio__about li:last-child {
   margin-bottom: 25px;
 }
 
 .portfolio__buttons {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "button-code button-demo";
+  display: flex;
   justify-self: center;
 }
 
-a.code,
 a.demo {
+  margin-right: 20px;
+}
+
+a.demo,
+a.code {
   display: grid;
   background: $charcoal;
-  border-radius: 8%;
-  width: 120px;
-  height: 60px;
+  border-radius: 10%;
+  width: 150px;
+  height: 75px;
   text-align: center;
   align-content: center;
   font-size: 1.2em;
@@ -91,22 +87,19 @@ a.demo {
   .portfolio__about span,
   .description,
   .description p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   
   .portfolio__about h4 {
   margin: 2px 0;
   }
   
-  .portfolio__about ul {
-  margin: 0;
-  }
   
   a.code,
   a.demo {
-    font-size: 1em;
-    width: 90px;
-    height: 45px;
+    font-size: 1.1em;
+    width: 110px;
+    height: 55px;
     font-weight: 500;
   }
 }
@@ -118,9 +111,7 @@ a.demo {
   }
   
   .projectOne,
-  .projectTwo,
-  .projectThree,
-  .projectFour {
+  .projectTwo {
     grid-column: 1 / -1;
     grid-template-areas:
      "portfolio-img"
@@ -134,9 +125,9 @@ a.demo {
   
   .portfolio__img {
     grid-area: portfolio-img;
-    width: 75%;
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 20px 5px;
   }
   
   .portfolio__about { 

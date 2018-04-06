@@ -763,8 +763,7 @@ li.menu-item.contactNav {
   display: grid;
   padding-bottom: 30px; }
 
-.projectOne,
-.projectThree {
+.projectOne {
   display: grid;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;
@@ -775,8 +774,7 @@ li.menu-item.contactNav {
   background: #ddd;
   padding: 20px; }
 
-.projectTwo,
-.projectFour {
+.projectTwo {
   display: grid;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;
@@ -797,11 +795,12 @@ li.menu-item.contactNav {
 
 .portfolio__about h4,
 .description {
-  display: inline;
+  display: block;
   font-weight: 700;
   color: #000;
   margin: 5px 0;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 1.7em; }
 
 .portfolio__about span {
   text-align: right;
@@ -813,28 +812,27 @@ li.menu-item.contactNav {
   font-weight: 500;
   font-size: 20px; }
 
-.portfolio__about ul {
-  font-weight: 500;
-  margin: -10px; }
-
 .portfolio__about li:last-child {
   margin-bottom: 25px; }
 
 .portfolio__buttons {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "button-code button-demo";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   justify-self: center; }
 
-a.code,
 a.demo {
+  margin-right: 20px; }
+
+a.demo,
+a.code {
   display: grid;
   background: #333;
-  -webkit-border-radius: 8%;
-          border-radius: 8%;
-  width: 120px;
-  height: 60px;
+  -webkit-border-radius: 10%;
+          border-radius: 10%;
+  width: 150px;
+  height: 75px;
   text-align: center;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
@@ -849,16 +847,14 @@ a.demo {
   .portfolio__about span,
   .description,
   .description p {
-    font-size: 1em; }
+    font-size: 1.1em; }
   .portfolio__about h4 {
     margin: 2px 0; }
-  .portfolio__about ul {
-    margin: 0; }
   a.code,
   a.demo {
-    font-size: 1em;
-    width: 90px;
-    height: 45px;
+    font-size: 1.1em;
+    width: 110px;
+    height: 55px;
     font-weight: 500; } }
 
 @media (max-width: 800px) {
@@ -866,9 +862,7 @@ a.demo {
     margin-top: 10px;
     padding-bottom: 80px; }
   .projectOne,
-  .projectTwo,
-  .projectThree,
-  .projectFour {
+  .projectTwo {
     grid-column: 1 / -1;
     grid-template-areas: "portfolio-img" "portfolio-about";
     padding: 30px 0;
@@ -878,9 +872,9 @@ a.demo {
     place-items: center; }
   .portfolio__img {
     grid-area: portfolio-img;
-    width: 75%;
+    width: 100%;
     height: auto;
-    margin-bottom: 20px; }
+    margin: 20px 5px; }
   .portfolio__about {
     grid-area: portfolio-about;
     width: 75%; } }
