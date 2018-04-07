@@ -648,8 +648,13 @@ li.menu-item.contactNav {
     z-index: 1; }
   a.menu-item {
     color: #000;
-    margin: 0; }
+    margin: 0;
+    padding: 1em; }
+  .menu-item.portfolio,
+  .menu-item.contactNav {
+    padding: 1em; }
   .menu-list > * {
+    font-size: 20px;
     color: #000;
     background: #ddd; }
   [aria-expanded="true"] ~ ul {
@@ -672,12 +677,15 @@ li.menu-item.contactNav {
   .project-list li a,
   .contact-info li a {
     display: inline;
-    color: #000; }
+    color: #000;
+    font-size: 20px; }
   .project-list li,
   .contact-info li {
-    padding: 10px; }
+    padding: .7em; }
   .contact-info {
-    text-align: center; } }
+    text-align: center; }
+  .contact-info li i {
+    font-size: 20px; } }
 
 @media (max-height: 400px) {
   .menu {
