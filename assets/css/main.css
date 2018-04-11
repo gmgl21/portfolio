@@ -621,7 +621,6 @@ i.fa-comment {
   font-size: 3em; }
 
 .contactList {
-  display: none;
   list-style: none;
   position: fixed;
   margin: 0;
