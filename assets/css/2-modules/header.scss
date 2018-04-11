@@ -132,6 +132,42 @@ li.menu-item.contactNav {
   display: none;
 }
 
+.contactBtn {
+  position: fixed;
+  left: 25px;
+  bottom: 50px;
+  background: #999;
+  border: 1px solid #999;
+  border-radius: 25%;
+  z-index: 1;
+  margin: 0;
+  padding: 20px;
+}
+
+i.fa-comment {
+  font-size: 3em;
+}
+
+
+.contactList {
+  list-style: none;
+  position: fixed;
+  margin: 0;
+  padding: 25px;
+  text-align: left;
+  background: #999;
+  left: 110px;
+  bottom: 50px;
+  border-radius: 10%;
+  z-index: 1;
+}
+
+.contactList li a {
+  padding-left: 10px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
 @media(max-width: 800px) {
   .menu {
     display: grid;
@@ -235,6 +271,20 @@ li.menu-item.contactNav {
   .contact-info li i {
     font-size: 20px;
   }
+  
+  .contactBtn {
+    padding: 10px;
+  }
+  
+  i.fa-comment {
+    font-size: 2em;
+  }
+  
+  .contactList {
+    left: 76px;
+    padding: 15px;
+  }
+  
 }
 
 @media(max-height: 400px) {
@@ -243,3 +293,5 @@ li.menu-item.contactNav {
     height: 80px;
   }
 }
+
+
