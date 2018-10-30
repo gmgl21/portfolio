@@ -4,7 +4,7 @@
 }
 
 .projectOne,
-.projectThree{
+.projectThree {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -119,7 +119,7 @@ a.code {
   
   .projectOne,
   .projectTwo,
-  .projectThree{
+  .projectThree {
     grid-column: 1 / -1;
     grid-template-areas:
      "portfolio-img"
