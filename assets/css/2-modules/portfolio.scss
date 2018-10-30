@@ -3,7 +3,8 @@
   padding-bottom: 30px;
 }
 
-.projectOne {
+.projectOne,
+.projectThree{
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -117,7 +118,8 @@ a.code {
   }
   
   .projectOne,
-  .projectTwo {
+  .projectTwo,
+  .projectThree{
     grid-column: 1 / -1;
     grid-template-areas:
      "portfolio-img"
